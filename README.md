@@ -22,13 +22,7 @@ Simple console tool for sending HTML e-mails.
 ```
 
 
-#### Basic usage:
-```
-    node app.js -u email@domain.com -p SuPeRsEcReTpAsSwOrD -t email@domain.com -s "Interesting subject" -f /path/to/html/file
-```
-
-
-#### Environment Variables
+#### Environment Variables:
 
 You can use environment variables for saving SMTP username and password.
 ```
@@ -37,7 +31,13 @@ You can use environment variables for saving SMTP username and password.
 ```
 
 
-#### Usage with environment variables
+
+#### Basic usage:
+```
+    node app.js -u email@domain.com -p SuPeRsEcReTpAsSwOrD -t email@domain.com -s "Interesting subject" -f /path/to/html/file
+```
+
+#### Usage with environment variables:
 ```
     node app.js -t email@domain.com -s "Interesting subject" -f /path/to/html/file
 ```
