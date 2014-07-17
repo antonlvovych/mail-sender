@@ -15,11 +15,11 @@ consoleParams
 
 if (consoleParams.file && consoleParams.user && consoleParams.pass && consoleParams.to) {
 
-    var file            = consoleParams.file.toString(),
-        user            = consoleParams.user.toString(),
-        pass            = consoleParams.pass.toString(),
-        to              = consoleParams.to.toString(),
-        subject         = consoleParams.subject.toString(),
+    var file            = consoleParams.file,
+        user            = consoleParams.user,
+        pass            = consoleParams.pass,
+        to              = consoleParams.to,
+        subject         = (consoleParams.subject || '(No subject)'),
         fileContents;
 
     if (!fs.existsSync(file)) {
