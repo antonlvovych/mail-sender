@@ -9,6 +9,7 @@ Simple console tool for sending HTML e-mails.
     node install
 ```
 
+
 #### Parameters:
 ```
     -h, --help                                     output usage information
@@ -20,23 +21,25 @@ Simple console tool for sending HTML e-mails.
     -f, --file <path>                              absolute path to file which you want send
 ```
 
+
 #### Basic usage:
 ```
-node app.js -u email@domain.com -p SuPeRsEcReTpAsSwOrD -t email@domain.com -s "Interesting subject" -f /path/to/html/file
+    node app.js -u email@domain.com -p SuPeRsEcReTpAsSwOrD -t email@domain.com -s "Interesting subject" -f /path/to/html/file
 ```
+
 
 #### Environment Variables
 
 You can use environment variables for saving SMTP username and password.
 
 **By default, i use variables:**
-
 ```
     export SMTP_USER=email@domain.com
     export SMTP_PASS=SuPeRsEcReTpAsSwOrD
 ```
 
+
 #### Usage with environment variables
 ```
-node app.js -t email@domain.com -s "Interesting subject" -f /path/to/html/file
+    node app.js -t email@domain.com -s "Interesting subject" -f /path/to/html/file
 ```
