@@ -1,0 +1,16 @@
+{
+  "name": "mail-sender",
+  "version": "0.0.0",
+  "description": "Simple console tool for sending HTML e-mails",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anton Fedulov",
+  "license": "GPLv3",
+  "dependencies": {
+    "commander": "^2.3.0",
+    "nodemailer": "^1.0.3",
+    "winston": "^0.7.3"
+  }
+}
