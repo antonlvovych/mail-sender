@@ -43,6 +43,9 @@ if (consoleParams.options.length) {
                     log.info('Message sent:', inf.response);
                 }
             });
+    } else {
+        log.error('Sorry, but i can\'t understand what you want ¯\\▁(◔◡◔)▁/¯\nRead the --help, please.');
+        consoleParams.help();
     }
 
 } else {
