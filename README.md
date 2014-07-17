@@ -1,7 +1,14 @@
 mail-sender
 ===========
 
-Simple console tool for sending HTML e-mails
+Simple console tool for sending HTML e-mails.
+
+#### Install:
+
+```
+    node i
+```
+
 
 #### Parameters:
 ```
@@ -17,7 +24,6 @@ Simple console tool for sending HTML e-mails
 #### Basic usage:
 ```
 node app.js -u email@domain.com -p SuPeRsEcReTpAsSwOrD -t email@domain.com -s "Interesting subject" -f /path/to/html/file
-
 ```
 
 
