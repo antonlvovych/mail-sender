@@ -31,8 +31,6 @@ Simple console tool for sending HTML e-mails.
 #### Environment Variables
 
 You can use environment variables for saving SMTP username and password.
-
-**By default, i use variables:**
 ```
     export SMTP_USER=email@domain.com
     export SMTP_PASS=SuPeRsEcReTpAsSwOrD
