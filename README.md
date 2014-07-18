@@ -17,8 +17,8 @@ Simple console tool for sending HTML e-mails.
     -u, --user <username> or Environment Variable  SMTP user (only GMAIL SMTP)
     -p, --pass <password> or Environment Variable  SMTP password (only GMAIL SMTP)
     -t, --to <email>                               recipient (can be several values - <email>, <email>, ...)
-    -s, --subject <subject>                        add subject to e-mail
-    -f, --file <path>                              absolute path to file which you want send
+    -s, --subject <subject>                        add subject to e-mail (optionally)
+    -f, --file <path>                              absolute path to file which you want to send
 ```
 
 

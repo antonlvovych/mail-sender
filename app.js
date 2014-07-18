@@ -8,7 +8,7 @@ consoleParams
     .option('-u, --user <username> or Environment Variable', 'SMTP user (only GMAIL SMTP)')
     .option('-p, --pass <password> or Environment Variable', "SMTP password (only GMAIL SMTP)")
     .option('-t, --to <email>', "recipient (can be several values - <email>, <email>, ...)")
-    .option('-s, --subject <subject>', 'add subject to e-mail')
+    .option('-s, --subject <subject>', 'add subject to e-mail (optionally)')
     .option('-f, --file <path>', 'absolute path to file which you want to send')
     .parse(process.argv);
 
@@ -22,7 +22,6 @@ if (consoleParams.options.length) {
         fileContents       = file.readFile(fileArg);
 
     if (userArg && passArg && toArg && fileContents) {
-
         nodemailer
             .createTransport({
                 service: 'Gmail',
